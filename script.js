@@ -76,7 +76,7 @@ function goToNextPhase() {
 window.onload = function () {
   if (!localStorage.getItem("step1Verified")) {
     if (window.location.pathname.includes("step3.html")) {
-      window.location.replace("step1.html"); // 🔥 Prevent direct access to Step 3
+      window.location.replace("index.html"); // 🔥 Prevent direct access to Step 3
     }
   }
 
@@ -209,5 +209,5 @@ function showThankYouMessage() {
 // ✅ Restart Journey (Redirect to Step 1)
 function restartJourney() {
   localStorage.removeItem("step1Verified"); // Clear Verification
-  window.location.href = "step1.html"; // Redirect to Start
+  window.location.href = "index.html"; // Redirect to Start
 }
